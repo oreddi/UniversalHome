@@ -114,7 +114,7 @@ export default function AdminPage() {
     const items = mediaData[sectionKey] || [];
     return (
       <div style={{ padding: '2rem' }}>
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
           <div>
             <h2 style={{ color: 'var(--primary)', marginBottom: '0.5rem' }}>{title}</h2>
             <p style={{ color: 'var(--gray-600)' }}>{desc}</p>
@@ -151,13 +151,14 @@ export default function AdminPage() {
                         style={{
                           ...provided.draggableProps.style,
                           display: 'flex',
+                          flexWrap: 'wrap',
                           alignItems: 'center',
                           background: 'white',
                           padding: '1rem',
                           borderRadius: '12px',
                           boxShadow: snapshot.isDragging ? 'var(--shadow-lg)' : 'var(--shadow-sm)',
                           border: '1px solid var(--gray-200)',
-                          gap: '1.5rem',
+                          gap: '1rem',
                         }}
                       >
                         <div style={{ color: 'var(--gray-600)', cursor: 'grab' }}>
@@ -168,7 +169,7 @@ export default function AdminPage() {
                           alt="Thumbnail" 
                           style={{ width: '100px', height: '70px', objectFit: 'cover', borderRadius: '8px', border: '1px solid #eee' }} 
                         />
-                        <div style={{ flex: 1 }}>
+                        <div style={{ flex: '1 1 200px' }}>
                           <strong>{item.title || `Image ${index + 1}`}</strong>
                           {item.category && <span style={{ marginLeft: '10px', fontSize: '0.75rem', padding: '2px 8px', background: 'var(--gray-200)', borderRadius: '12px' }}>{item.category}</span>}
                           <p style={{ fontSize: '0.8rem', color: 'var(--gray-600)' }}>{item.image}</p>
@@ -196,7 +197,7 @@ export default function AdminPage() {
     return (
       <div style={{ background: 'white', padding: '1.5rem', borderRadius: '12px', border: '1px solid var(--gray-200)', marginBottom: '1.5rem' }}>
         <h3 style={{ marginBottom: '1rem' }}>{title}</h3>
-        <div style={{ display: 'flex', gap: '2rem', alignItems: 'flex-start' }}>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem', alignItems: 'flex-start' }}>
           <img src={currentImage} alt="Current" style={{ width: '200px', height: '140px', objectFit: 'cover', borderRadius: '8px', border: '2px dashed var(--gray-300)' }} />
           <div>
             <p style={{ color: 'var(--gray-600)', marginBottom: '1rem' }}>Upload a new image to replace the current one.</p>
