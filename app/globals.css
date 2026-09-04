@@ -1751,11 +1751,9 @@ img {
 }
 
 .service-icon {
-  position: absolute;
-  bottom: -20px;
-  right: 20px;
   background: var(--primary);
   color: var(--white);
+  flex-shrink: 0;
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -1768,7 +1766,7 @@ img {
 }
 
 .service-content {
-  padding: 2.5rem 2rem 2rem 2rem;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   flex: 1;

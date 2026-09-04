@@ -7,7 +7,7 @@ import { useLanguage } from '@/context/LanguageContext';
 const carePillars = [
   {
     id: 'living',
-    tabLabel: '🏡 Homelike Care & Living',
+    tabLabel: <><i className="fas fa-home" style={{ marginRight: '0.4rem' }}></i> Homelike Care & Living</>,
     badgeText: 'HOMELIKE ATMOSPHERE & EMOTIONAL SUPPORT',
     title: 'A Loving, Respectful Home Away from Home',
     intro: 'We treat every resident like a beloved family member. Our compassionate caregivers provide round-the-clock companionship, daily assistance, and emotional warmth.',
@@ -38,7 +38,7 @@ const carePillars = [
   },
   {
     id: 'video',
-    tabLabel: '🎬 Campus Life & Video Tour',
+    tabLabel: <><i className="fas fa-video" style={{ marginRight: '0.4rem' }}></i> Campus Life Tour</>,
     badgeText: 'SEE DAILY LIFE & RECREATION IN ACTION',
     title: 'Daily Activities, Devotional Worship & Outdoor Lawn Yoga',
     intro: 'Watch how our residents stay physically active, mentally engaged, and spiritually fulfilled every single day through our structured daily schedule.',
@@ -69,7 +69,7 @@ const carePillars = [
   },
   {
     id: 'medical',
-    tabLabel: '🩺 24/7 Medical Care & Nursing',
+    tabLabel: <><i className="fas fa-stethoscope" style={{ marginRight: '0.4rem' }}></i> 24/7 Medical Care</>,
     badgeText: '24/7 QUALIFIED MEDICAL SUPERVISION',
     title: 'Round-the-Clock Nursing & Doctor Checkups',
     intro: 'Comprehensive geriatric medical supervision so seniors never have to endure exhausting hospital visits or travel stress.',
@@ -100,7 +100,7 @@ const carePillars = [
   },
   {
     id: 'food',
-    tabLabel: '🥗 Organic Vegetarian Nutrition',
+    tabLabel: <><i className="fas fa-apple-alt" style={{ marginRight: '0.4rem' }}></i> Organic Nutrition</>,
     badgeText: 'DIETITIAN-CURATED ORGANIC MEALS',
     title: 'Delicious, Hygienic & Doctor-Approved Meals',
     intro: 'Food is medicine. Our commercial kitchen prepares 100% vegetarian, warm, organic home-style meals planned by clinical dietitians.',
@@ -131,7 +131,7 @@ const carePillars = [
   },
   {
     id: 'beds',
-    tabLabel: '🛌 Beds & Hygiene Standards',
+    tabLabel: <><i className="fas fa-bed" style={{ marginRight: '0.4rem' }}></i> Beds & Hygiene</>,
     badgeText: 'HOSPITAL-GRADE CLEANLINESS & COMFORT',
     title: 'Orthopedic Bedding & Sanitized Living Spaces',
     intro: 'We maintain hospital-grade sanitation standards combined with cozy home-like warmth for resident comfort and infection control.',

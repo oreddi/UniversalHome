@@ -38,13 +38,10 @@ export default function ServicesSection({ onOpenServiceModal }) {
             <div className="service-card" key={service.id}>
               <div className="service-img">
                 <img src={service.image} alt={service.title} />
-                <div className="service-icon">
-                  <i className={service.icon || 'fas fa-heart'}></i>
-                </div>
               </div>
               <div className="service-content">
-                <h3>{service.title}</h3>
-                <p>{service.desc}</p>
+                <h3 style={{ margin: 0, marginBottom: '0.75rem' }}>{service.title}</h3>
+                <p style={{ marginTop: 0 }}>{service.desc}</p>
                 <button
                   className="btn-link"
                   onClick={(e) => {
