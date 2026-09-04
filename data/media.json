@@ -1,0 +1,161 @@
+{
+  "heroSlides": [
+    {
+      "id": "0",
+      "image": "/images/hero-1.png",
+      "order": 0
+    },
+    {
+      "id": "1",
+      "image": "/images/hero-2.png",
+      "order": 1
+    },
+    {
+      "id": "2",
+      "image": "/images/nursing-care.png",
+      "order": 2
+    },
+    {
+      "id": "3",
+      "image": "/images/nutritious-meals.png",
+      "order": 3
+    },
+    {
+      "id": "4",
+      "image": "/images/clean-bedroom.png",
+      "order": 4
+    }
+  ],
+  "gallerySlides": [
+    {
+      "id": "g1",
+      "category": "care",
+      "title": "Warm Nursing Care",
+      "image": "/images/hero-1.png",
+      "order": 0
+    },
+    {
+      "id": "g2",
+      "category": "routine",
+      "title": "Morning Outdoor Yoga",
+      "image": "/images/hero-2.png",
+      "order": 1
+    },
+    {
+      "id": "g3",
+      "category": "dining",
+      "title": "Communal Organic Dining",
+      "image": "/images/hero-3.png",
+      "order": 2
+    },
+    {
+      "id": "g4",
+      "category": "care",
+      "title": "24/7 Vitals Monitoring",
+      "image": "/images/nursing-care.png",
+      "order": 3
+    },
+    {
+      "id": "g5",
+      "category": "care",
+      "title": "Doctor Consultation",
+      "image": "/images/doctor-visit.png",
+      "order": 4
+    },
+    {
+      "id": "g6",
+      "category": "dining",
+      "title": "Dietitian Prepared Thali",
+      "image": "/images/nutritious-meals.png",
+      "order": 5
+    },
+    {
+      "id": "g7",
+      "category": "routine",
+      "title": "Rehab & Physiotherapy",
+      "image": "/images/physiotherapy.png",
+      "order": 6
+    },
+    {
+      "id": "g8",
+      "category": "care",
+      "title": "Dementia Brain Games",
+      "image": "/images/dementia-care.png",
+      "order": 7
+    },
+    {
+      "id": "g9",
+      "category": "routine",
+      "title": "Recreation & Carrom Fun",
+      "image": "/images/recreation.png",
+      "order": 8
+    },
+    {
+      "id": "g10",
+      "category": "living",
+      "title": "Spacious Clean Bedroom",
+      "image": "/images/clean-bedroom.png",
+      "order": 9
+    },
+    {
+      "id": "g11",
+      "category": "routine",
+      "title": "Evening Prayer Hall",
+      "image": "/images/prayer-hall.png",
+      "order": 10
+    }
+  ],
+  "servicesSlides": [
+    {
+      "id": "nursing",
+      "title": "24/7 Nursing Care",
+      "image": "/images/nursing-care.png",
+      "icon": "fas fa-user-nurse",
+      "desc": "Round-the-clock professional medical supervision, medication management, vital signs tracking, and personal assistance for all residents.",
+      "order": 0
+    },
+    {
+      "id": "doctor",
+      "title": "In-House Doctor Visits",
+      "image": "/images/doctor-visit.png",
+      "icon": "fas fa-stethoscope",
+      "desc": "Regular health checkups and specialist consultations directly at our facility so seniors never need stressful hospital visits.",
+      "order": 1
+    },
+    {
+      "id": "food",
+      "title": "Nutritious Dietary Meals",
+      "image": "/images/nutritious-meals.png",
+      "icon": "fas fa-utensils",
+      "desc": "Hygienic, warm, and freshly cooked organic vegetarian meals custom-tailored to each senior's health and medical needs.",
+      "order": 2
+    },
+    {
+      "id": "physio",
+      "title": "Physiotherapy & Rehab",
+      "image": "/images/physiotherapy.png",
+      "icon": "fas fa-running",
+      "desc": "Specialized senior exercises to rebuild strength, flexibility, and post-illness mobility under expert physiotherapist guidance.",
+      "order": 3
+    },
+    {
+      "id": "dementia",
+      "title": "Dementia & Alzheimer's Care",
+      "image": "/images/dementia-care.png",
+      "icon": "fas fa-brain",
+      "desc": "Gentle, structured support and brain stimulation activities in a secure, loving environment with trained caregivers.",
+      "order": 4
+    },
+    {
+      "id": "recreation",
+      "title": "Recreation & Entertainment",
+      "image": "/images/recreation.png",
+      "icon": "fas fa-smile",
+      "desc": "Daily prayers, light exercises, festival celebrations, musical evenings, and fun group board games to keep spirits high.",
+      "order": 5
+    }
+  ],
+  "aboutImage": "/images/hero-1.png",
+  "bedsImage": "/images/clean-bedroom.png",
+  "foodImage": "/images/nutritious-meals.png"
+}
