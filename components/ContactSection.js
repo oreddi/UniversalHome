@@ -18,10 +18,13 @@ export default function ContactSection() {
     e.preventDefault();
     setIsSending(true);
 
-    // TODO: Replace with actual Service ID, Template ID, and Public Key from EmailJS
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || 'YOUR_SERVICE_ID';
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || 'YOUR_TEMPLATE_ID';
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || 'YOUR_PUBLIC_KEY';
+
     emailjs
-      .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-        publicKey: 'YOUR_PUBLIC_KEY',
+      .sendForm(serviceId, templateId, form.current, {
+        publicKey: publicKey,
       })
       .then(
         () => {
