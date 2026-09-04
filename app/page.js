@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import TopBar from '@/components/TopBar';
 import Header from '@/components/Header';
 import HeroSlider from '@/components/HeroSlider';
@@ -30,6 +30,30 @@ export default function Home() {
   const [isDonateOpen, setIsDonateOpen] = useState(false);
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   const [activeServiceModal, setActiveServiceModal] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    import('react').then(() => {
+      fetch('/api/media')
+        .then(() => {
+          setTimeout(() => setIsLoading(false), 800);
+        })
+        .catch(() => setIsLoading(false));
+    });
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div style={{ height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', background: 'var(--light-bg)', flexDirection: 'column' }}>
+        <div style={{ width: '60px', height: '60px', border: '6px solid rgba(180, 83, 9, 0.2)', borderTop: '6px solid #b45309', borderRadius: '50%', animation: 'spin 1s linear infinite' }}></div>
+        <h2 style={{ color: '#b45309', marginTop: '1.5rem', fontFamily: 'var(--font-heading)' }}>Universal Home</h2>
+        <p style={{ color: 'var(--gray-600)', marginTop: '0.5rem' }}>Loading experience...</p>
+        <style>{`
+          @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        `}</style>
+      </div>
+    );
+  }
 
   return (
     <main>
