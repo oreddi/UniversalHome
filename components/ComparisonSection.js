@@ -1,22 +1,22 @@
 export default function ComparisonSection() {
   const comparisonData = [
     {
-      feature: '24/7 Qualified Nurse Support',
+      feature: '24/7 Caregiver Support',
       home: '❌ Dependent on maid availability',
       hospital: '⚠️ Expensive clinical ICU setup',
-      universal: '✓ Included 24/7 dedicated nursing',
+      universal: '✓ Included 24/7 dedicated caregiver support',
     },
     {
-      feature: 'Regular Doctor Checkups',
-      home: '❌ Stressful travel to clinics',
-      hospital: '⚠️ High daily doctor consultation fees',
-      universal: '✓ Included bi-weekly in-house visits',
+      feature: 'Safety & Emergency Care',
+      home: '❌ Vulnerable during emergencies',
+      hospital: '⚠️ Stressful clinical environment',
+      universal: '✓ Included basic safety and care monitoring',
     },
     {
-      feature: 'Dietitian Organic Meals',
+      feature: 'Daily Homely Meals',
       home: '❌ Irregular cooking & nutrition',
       hospital: '⚠️ Standard Bland hospital food',
-      universal: '✓ 4 Warm, organic custom veg meals',
+      universal: '✓ 4 Warm, homely veg meals',
     },
     {
       feature: 'Social Companionship & Joy',
@@ -25,7 +25,7 @@ export default function ComparisonSection() {
       universal: '✓ Group games, bhajans & laughter',
     },
     {
-      feature: 'Dementia & Wandering Safety',
+      feature: 'Safe & Secure Environment',
       home: '❌ High safety risk of slipping/wandering',
       hospital: '⚠️ Restrictive medical environments',
       universal: '✓ Secure anti-skid campus & care staff',
@@ -39,7 +39,7 @@ export default function ComparisonSection() {
           <span className="section-subtitle">PEACE OF MIND FOR FAMILIES</span>
           <h2 className="section-title">Why Families Choose Universal Home</h2>
           <p className="section-desc">
-            Compare senior care options to see why over 500+ families trust us for warm, homelike geriatric living.
+            Compare senior care options to see why over 500+ families trust us for warm, homelike senior living.
           </p>
         </div>
 

@@ -5,20 +5,20 @@ export default function HighlightsBar() {
         <div className="highlights-grid">
           <div className="highlight-item">
             <div className="highlight-icon">
-              <i className="fas fa-user-nurse"></i>
+              <i className="fas fa-user-friends"></i>
             </div>
             <div className="highlight-text">
-              <h4>24/7 Nursing Staff</h4>
-              <p>Round-the-clock medical care</p>
+              <h4>24/7 Caregivers</h4>
+              <p>Round-the-clock assistance</p>
             </div>
           </div>
           <div className="highlight-item">
             <div className="highlight-icon">
-              <i className="fas fa-user-md"></i>
+              <i className="fas fa-shield-alt"></i>
             </div>
             <div className="highlight-text">
-              <h4>In-House Doctors</h4>
-              <p>Regular physician visits</p>
+              <h4>Safe & Secure</h4>
+              <p>Constant monitoring</p>
             </div>
           </div>
           <div className="highlight-item">
@@ -27,15 +27,15 @@ export default function HighlightsBar() {
             </div>
             <div className="highlight-text">
               <h4>Organic Veg Food</h4>
-              <p>Customized dietitian meals</p>
+              <p>Customized healthy meals</p>
             </div>
           </div>
           <div className="highlight-item">
             <div className="highlight-icon">
-              <i className="fas fa-heartbeat"></i>
+              <i className="fas fa-walking"></i>
             </div>
             <div className="highlight-text">
-              <h4>Physiotherapy & Rehab</h4>
+              <h4>Active Lifestyle</h4>
               <p>Daily mobility & yoga sessions</p>
             </div>
           </div>

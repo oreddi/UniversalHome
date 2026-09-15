@@ -36,10 +36,10 @@ export default function VideoTourModal({ isOpen, onClose }) {
           </div>
           <div style={{ padding: '1.5rem', textAlign: 'left', background: 'var(--light-bg)' }}>
             <h4 style={{ color: 'var(--primary)', marginBottom: '0.4rem', fontSize: '1.1rem' }}>
-              A Day in the Life at Universal Home, Kukatpally
+              A Day in the Life at Universal Home, Kowkur
             </h4>
             <p style={{ fontSize: '0.9rem', color: 'var(--gray-600)' }}>
-              See our peaceful garden lawn, morning yoga sessions, warm dining room, 24/7 nursing station, and daily devotional prayers. We invite you to visit our facility in person!
+              See our peaceful garden lawn, morning yoga sessions, warm dining room, care station, and daily devotional prayers. We invite you to visit our facility in person!
             </p>
           </div>
         </div>

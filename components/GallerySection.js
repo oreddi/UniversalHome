@@ -45,7 +45,7 @@ export default function GallerySection() {
             className={`filter-btn ${filter === 'care' ? 'active' : ''}`}
             onClick={() => setFilter('care')}
           >
-            Nursing & Doctors
+            Caregivers & Staff
           </button>
           <button
             className={`filter-btn ${filter === 'routine' ? 'active' : ''}`}

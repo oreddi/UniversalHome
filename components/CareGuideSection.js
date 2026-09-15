@@ -69,94 +69,94 @@ const carePillars = [
   },
   {
     id: 'medical',
-    tabLabel: <><i className="fas fa-stethoscope" style={{ marginRight: '0.4rem' }}></i> 24/7 Medical Care</>,
-    badgeText: '24/7 QUALIFIED MEDICAL SUPERVISION',
-    title: 'Round-the-Clock Nursing & Doctor Checkups',
-    intro: 'Comprehensive geriatric medical supervision so seniors never have to endure exhausting hospital visits or travel stress.',
+    tabLabel: <><i className="fas fa-user-friends" style={{ marginRight: '0.4rem' }}></i> 24/7 Caregiver Support</>,
+    badgeText: '24/7 DEDICATED ASSISTANCE',
+    title: 'Round-the-Clock Caregiver Support',
+    intro: 'Dedicated caregivers and support staff available 24/7 to assist seniors with their daily living and basic safety.',
     image: '/images/nursing-care.png',
     isVideo: false,
     steps: [
       {
         num: 1,
-        heading: 'Daily Vitals Tracking & Medication Log (9:30 AM)',
-        text: 'Nurses record blood pressure, pulse, blood glucose levels, and administer exact medication doses on time.',
+        heading: 'Daily Assistance',
+        text: 'Caregivers are available around the clock to help with any personal needs, ensuring residents are comfortable and safe.',
       },
       {
         num: 2,
-        heading: 'Bi-Weekly In-House Physician Visits',
-        text: 'General physicians and geriatric specialists conduct regular bedside rounds and reviews with family members.',
+        heading: 'Routine Health Checks',
+        text: 'Basic well-being monitoring to ensure seniors are active, healthy, and happy in a stress-free environment.',
       },
       {
         num: 3,
-        heading: 'Physiotherapy & Post-Stroke Rehabilitation',
-        text: 'Daily certified physical therapy for arthritis, paralysis, stroke recovery, balance training, and fall prevention.',
+        heading: 'Mobility & Routine Care',
+        text: 'Gentle support with daily walking, sitting, and routine hygiene activities for peace of mind.',
       },
       {
         num: 4,
-        heading: '24/7 Emergency Ambulance Tie-Ups',
-        text: 'Immediate emergency response with oxygen concentrators on every floor and direct multi-specialty hospital tie-ups in Kukatpally.',
+        heading: 'Emergency Support',
+        text: 'Immediate assistance and basic first-aid support available on the premises for sudden emergencies.',
       },
     ],
   },
   {
     id: 'food',
-    tabLabel: <><i className="fas fa-apple-alt" style={{ marginRight: '0.4rem' }}></i> Organic Nutrition</>,
-    badgeText: 'DIETITIAN-CURATED ORGANIC MEALS',
-    title: 'Delicious, Hygienic & Doctor-Approved Meals',
-    intro: 'Food is medicine. Our commercial kitchen prepares 100% vegetarian, warm, organic home-style meals planned by clinical dietitians.',
+    tabLabel: <><i className="fas fa-apple-alt" style={{ marginRight: '0.4rem' }}></i> Homely Meals</>,
+    badgeText: 'PURE VEGETARIAN HOMELY FOOD',
+    title: 'Delicious, Hygienic & Warm Meals',
+    intro: 'We serve freshly prepared, homely vegetarian meals cooked in a clean and hygienic kitchen every day.',
     image: '/images/nutritious-meals.png',
     isVideo: false,
     steps: [
       {
         num: 1,
-        heading: 'Custom Health & Diabetic Diets',
-        text: 'Tailored low-glycemic diabetic meals, low-sodium hypertension food, soft pureed diets, and kidney-friendly menu options.',
+        heading: '4 Meals Served Daily',
+        text: 'Morning tea & breakfast, nutritious lunch, evening snacks & tea, and a light homely dinner.',
       },
       {
         num: 2,
-        heading: '4 Wholesome Meals Served Daily',
-        text: 'Morning herbal tea/coffee, hot South/North Indian breakfast, balanced lunch thali, evening tea & snacks, and light early dinner.',
+        heading: 'Fresh Ingredients',
+        text: 'Freshly sourced vegetables and wholesome grains used daily for cooking.',
       },
       {
         num: 3,
-        heading: 'Fresh Organic Local Produce',
-        text: 'Organic vegetables sourced daily from local farms for maximum natural vitamins, minerals, and immunity support.',
+        heading: 'Basic Diet Care',
+        text: 'We accommodate basic health needs like soft-cooked or diabetic-friendly food.',
       },
       {
         num: 4,
-        heading: 'Hygienic RO UV Water & Stainless Kitchen',
-        text: 'Cooked in 100% stainless steel cookware using purified 5-stage RO UV filtered drinking water.',
+        heading: 'Purified Water',
+        text: 'Clean RO purified drinking water available for all residents 24/7.',
       },
     ],
   },
   {
     id: 'beds',
     tabLabel: <><i className="fas fa-bed" style={{ marginRight: '0.4rem' }}></i> Beds & Hygiene</>,
-    badgeText: 'HOSPITAL-GRADE CLEANLINESS & COMFORT',
-    title: 'Orthopedic Bedding & Sanitized Living Spaces',
-    intro: 'We maintain hospital-grade sanitation standards combined with cozy home-like warmth for resident comfort and infection control.',
+    badgeText: 'CLEAN & COMFORTABLE LIVING',
+    title: 'Comfortable Bedding & Clean Rooms',
+    intro: 'We maintain strict cleanliness standards combined with cozy home-like warmth for resident comfort.',
     image: '/images/clean-bedroom.png',
     isVideo: false,
     steps: [
       {
         num: 1,
-        heading: 'Orthopedic & Semi-Fowler Beds',
-        text: 'High-density memory foam mattresses and adjustable semi-fowler medical beds for bedridden and posture support.',
+        heading: 'Comfortable Beds',
+        text: 'Clean and well-maintained beds for a peaceful and restful sleep.',
       },
       {
         num: 2,
-        heading: 'Daily Laundering & Fresh Linen Change (10:30 AM)',
-        text: 'Bedsheets, pillow covers, and blankets are laundered and sanitized with anti-bacterial detergent every single morning.',
+        heading: 'Daily Laundering & Fresh Linen',
+        text: 'Bedsheets, pillow covers, and blankets are laundered and changed regularly for hygiene.',
       },
       {
         num: 3,
-        heading: 'Deep Room Cleaning Twice Daily',
-        text: 'Floors and furniture washed twice daily using eco-friendly non-toxic disinfectants for total germ protection.',
+        heading: 'Daily Room Cleaning',
+        text: 'Floors and furniture are washed and swept daily to keep the environment fresh and safe.',
       },
       {
         num: 4,
-        heading: 'Anti-Skid Bathrooms with Grab Bars',
-        text: 'Attached washrooms equipped with safety handrails, non-slip floor tiles, and 24/7 hot water geysers.',
+        heading: 'Safe Washrooms',
+        text: 'Attached washrooms equipped with safety handrails and hot water geysers.',
       },
     ],
   },
@@ -227,7 +227,7 @@ export default function CareGuideSection({ onOpenVideoModal }) {
                   </button>
                 ) : (
                   <a href="tel:+919398861612" className="btn btn-outline">
-                    <i className="fas fa-phone"></i> Call Nurse (+91 9398861612)
+                    <i className="fas fa-phone"></i> Call Helpline (+91 9398861612)
                   </a>
                 )}
               </div>

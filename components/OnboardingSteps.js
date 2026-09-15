@@ -8,7 +8,7 @@ export default function OnboardingSteps() {
       num: '01',
       badge: 'STEP 1: GET IN TOUCH',
       title: 'Free Consultation & Campus Tour',
-      desc: 'Call our 24/7 helpline or book a visit online. Tour our campus in Kukatpally, meet our nurses, inspect the rooms, and ask any questions.',
+      desc: 'Call our 24/7 helpline or book a visit online. Tour our campus in Kowkur, meet our caregivers, inspect the rooms, and ask any questions.',
       actionText: 'Book Campus Tour',
       actionHref: '/contact',
       icon: 'fas fa-phone-volume',

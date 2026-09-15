@@ -64,7 +64,9 @@ export default function ContactSection() {
               <div>
                 <strong>Address</strong>
                 <p style={{ color: 'var(--gray-600)' }}>
-                  Flat No.5, Block No.3, RGK Bharathi Nagar, Kowkur, Kukatpally, Hyderabad, Telangana - 500010
+                  Flat No. 5, Block No. 3,<br />
+                  RGK Bharathi Nagar, Kowkur,<br />
+                  Hyderabad, Telangana - 500010
                 </p>
               </div>
             </div>

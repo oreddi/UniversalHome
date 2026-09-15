@@ -30,7 +30,7 @@
     {
       "id": "g1",
       "category": "care",
-      "title": "Warm Nursing Care",
+      "title": "Warm Elderly Care",
       "image": "/images/hero-1.png",
       "order": 0
     },
@@ -107,52 +107,28 @@
   ],
   "servicesSlides": [
     {
-      "id": "nursing",
-      "title": "24/7 Nursing Care",
+      "id": "caregiver",
+      "title": "24/7 Caregiver Support",
       "image": "/images/nursing-care.png",
-      "icon": "fas fa-user-nurse",
-      "desc": "Round-the-clock professional medical supervision, medication management, vital signs tracking, and personal assistance for all residents.",
+      "icon": "fas fa-user-friends",
+      "desc": "Round-the-clock dedicated caregiver support and personal assistance for all residents in a safe environment.",
       "order": 0
     },
     {
-      "id": "doctor",
-      "title": "In-House Doctor Visits",
-      "image": "/images/doctor-visit.png",
-      "icon": "fas fa-stethoscope",
-      "desc": "Regular health checkups and specialist consultations directly at our facility so seniors never need stressful hospital visits.",
+      "id": "food",
+      "title": "Homely Vegetarian Meals",
+      "image": "/images/nutritious-meals.png",
+      "icon": "fas fa-utensils",
+      "desc": "Hygienic, warm, and freshly cooked vegetarian meals provided four times a day.",
       "order": 1
     },
     {
-      "id": "food",
-      "title": "Nutritious Dietary Meals",
-      "image": "/images/nutritious-meals.png",
-      "icon": "fas fa-utensils",
-      "desc": "Hygienic, warm, and freshly cooked organic vegetarian meals custom-tailored to each senior's health and medical needs.",
-      "order": 2
-    },
-    {
-      "id": "physio",
-      "title": "Physiotherapy & Rehab",
-      "image": "/images/physiotherapy.png",
-      "icon": "fas fa-running",
-      "desc": "Specialized senior exercises to rebuild strength, flexibility, and post-illness mobility under expert physiotherapist guidance.",
-      "order": 3
-    },
-    {
-      "id": "dementia",
-      "title": "Dementia & Alzheimer's Care",
-      "image": "/images/dementia-care.png",
-      "icon": "fas fa-brain",
-      "desc": "Gentle, structured support and brain stimulation activities in a secure, loving environment with trained caregivers.",
-      "order": 4
-    },
-    {
       "id": "recreation",
-      "title": "Recreation & Entertainment",
+      "title": "Recreation & Prayers",
       "image": "/images/recreation.png",
       "icon": "fas fa-smile",
-      "desc": "Daily prayers, light exercises, festival celebrations, musical evenings, and fun group board games to keep spirits high.",
-      "order": 5
+      "desc": "Daily prayers, light exercises, festival celebrations, and group activities to keep spirits high.",
+      "order": 2
     }
   ],
   "aboutImage": "/images/hero-1.png",

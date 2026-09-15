@@ -16,7 +16,7 @@ export const translations = {
     // Hero Section
     badgeHero: 'TRUSTED GERIATRIC CARE SINCE 2011',
     heroTitle: 'Warm, Dignified & Safe Senior Living',
-    heroSubtitle: '24/7 qualified nursing care, in-house physician checkups, organic dietitian meals, and dedicated dementia boarding in Kukatpally, Hyderabad.',
+    heroSubtitle: '24/7 dedicated caregiver support, homely vegetarian meals, and safe senior boarding in Kowkur, Hyderabad.',
     btnExploreGuide: 'Explore Care Guide',
     btnVideoTour: 'Watch 25-Sec Video Tour',
     btnNextSteps: 'What to Do Next?',
@@ -43,7 +43,7 @@ export const translations = {
 
     // Contact
     contactTitle: 'Contact Us & Schedule a Campus Visit',
-    address: 'Universal Home, Kukatpally / Kowkur, Hyderabad, Telangana - 500072',
+    address: 'Flat no 5, Block no 3, RGK Bharathi nagar, Kowkur, Hyderabad - 500010',
   },
   te: {
     // Header & TopBar

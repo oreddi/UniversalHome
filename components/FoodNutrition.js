@@ -27,34 +27,46 @@ export default function FoodNutrition() {
           <div className="spotlight-img-wrap">
             <img src={foodImage} alt="Food & Nutrition" />
             <div className="spotlight-badge">
-              <strong>Dietitian Curated Menu</strong>
-              <span>100% Pure Organic Vegetarian Meals</span>
+              <strong>Homely Food</strong>
+              <span>Pure Vegetarian Meals</span>
             </div>
           </div>
           <div className="spotlight-text">
             <span className="section-subtitle">FOOD ITEMS & NUTRITION</span>
-            <h3>Delicious, Hygienic & Doctor-Approved Nutrition</h3>
+            <h3>Fresh, Healthy & Hygienic Meals</h3>
             <p>
-              Proper nutrition accelerates recovery, boosts immunity, and brings joy to everyday life. All meals are prepared fresh in our modern commercial kitchen.
+              We serve freshly prepared, homely vegetarian meals cooked in a clean and hygienic kitchen every day.
             </p>
 
-            <ul className="feature-list">
+            <ul className="feature-list" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               <li>
-                <span className="check">✓</span> <strong>Custom Health Diets:</strong> Special diabetic, hypertension (low salt), soft pureed, and renal diets available.
+                <span className="check">✓</span> 
+                <div>
+                  <strong>4 Meals a Day:</strong> Morning tea & breakfast, nutritious lunch, evening snacks & tea, and a light homely dinner.
+                </div>
               </li>
               <li>
-                <span className="check">✓</span> <strong>Fresh Organic Vegetables:</strong> Sourced daily from local organic farms for max vitamins and minerals.
+                <span className="check">✓</span> 
+                <div>
+                  <strong>Fresh Ingredients:</strong> Freshly sourced vegetables and wholesome grains used daily for cooking.
+                </div>
               </li>
               <li>
-                <span className="check">✓</span> <strong>4 Meals a Day:</strong> Morning tea, rich breakfast, complete lunch thali, evening tea & snack, and light dinner.
+                <span className="check">✓</span> 
+                <div>
+                  <strong>Basic Diet Care:</strong> We accommodate basic health needs like soft-cooked or diabetic-friendly food.
+                </div>
               </li>
               <li>
-                <span className="check">✓</span> <strong>Purified Drinking Water:</strong> 5-stage RO UV water filtration stations available across every floor.
+                <span className="check">✓</span> 
+                <div>
+                  <strong>Purified Water:</strong> Clean RO purified drinking water available for all residents 24/7.
+                </div>
               </li>
             </ul>
 
-            <a href="/contact" className="btn btn-primary">
-              Download Sample Diet Plan
+            <a href="/contact" className="btn btn-primary" style={{ marginTop: '1rem' }}>
+              Contact Us for Details
             </a>
           </div>
         </div>

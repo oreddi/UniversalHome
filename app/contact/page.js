@@ -25,7 +25,7 @@ export default function ContactPage() {
           </span>
           <h1>Contact Us & Schedule a Campus Tour</h1>
           <p>
-            We invite you and your family to visit our campus in Kukatpally / Kowkur, Hyderabad. Call our 24/7 helpline or book a tour below.
+            We invite you and your family to visit our campus in Kowkur, Hyderabad. Call our 24/7 helpline or book a tour below.
           </p>
         </div>
       </div>

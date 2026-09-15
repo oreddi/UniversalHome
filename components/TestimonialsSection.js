@@ -9,7 +9,7 @@ export default function TestimonialsSection() {
     },
     {
       quote:
-        '"The food hygiene and beds are top-class. My father has mild dementia, and the staff treats him with so much patience and respect. Highly recommended old age home in Kukatpally!"',
+        '"The food hygiene and beds are top-class. My father has mild dementia, and the staff treats him with so much patience and respect. Highly recommended old age home in Kowkur!"',
       name: 'Kavitha Reddy',
       relation: 'Daughter of Resident (Hyderabad)',
       initials: 'KR',

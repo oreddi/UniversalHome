@@ -29,7 +29,7 @@ export default function ServicesSection({ onOpenServiceModal }) {
           <span className="section-subtitle">OUR CARE PILLARS</span>
           <h2 className="section-title">Comprehensive Geriatric Services</h2>
           <p className="section-desc">
-            We don't just provide a bed; we provide a holistic healthcare ecosystem tailored for aging grace.
+            We don't just provide a bed; we provide a holistic elder care ecosystem tailored for aging grace.
           </p>
         </div>
 

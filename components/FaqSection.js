@@ -9,7 +9,7 @@ const faqs = [
   },
   {
     q: 'How do you handle medical emergencies at night?',
-    a: 'We have qualified nurses on duty 24/7. Oxygen concentrators and first-aid kits are available on every floor. We have an on-call emergency ambulance with immediate transfer tie-ups with nearby multi-specialty hospitals in Kukatpally.',
+    a: 'We have dedicated caregivers on duty 24/7. Basic first-aid kits are available on every floor. In case of sudden medical emergencies, we assist with immediate transfer to nearby hospitals.',
   },
   {
     q: 'Are special customized diets provided for diabetic or bedridden residents?',

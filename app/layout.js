@@ -3,8 +3,8 @@ import { LanguageProvider } from '@/context/LanguageContext';
 
 export const metadata = {
   title: 'Universal Orphanage & Old Age Home | Compassionate Geriatric Care in Hyderabad',
-  description: '100% Free non-profit old age home and orphanage facility in Kukatpally, Hyderabad. 24/7 nursing, doctor visits, organic meals, physiotherapy, and dementia care.',
-  keywords: 'Old Age Home Hyderabad, Free Senior Care Kukatpally, Geriatric Care, Nursing Home, Dementia Care, Universal Home',
+  description: '100% Free non-profit old age home and orphanage facility in Kowkur, Hyderabad. 24/7 caregiver support, organic meals, and safe senior boarding.',
+  keywords: 'Old Age Home Hyderabad, Free Senior Care Kowkur, Geriatric Care, Dementia Care, Universal Home',
 };
 
 export default function RootLayout({ children }) {
