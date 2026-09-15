@@ -24,35 +24,28 @@ export default function AboutSection() {
     <section id="about" className="section">
       <div className="container" style={{ display: 'flex', gap: '3rem', alignItems: 'center', flexWrap: 'wrap' }}>
         <div className="about-img-box" style={{ flex: '1 1 400px' }}>
-          <img src={aboutImage} alt="About Universal Home" />
+          <img src={aboutImage} alt="About Universal Home" style={{ borderRadius: '4px' }} />
         </div>
         <div className="about-content" style={{ flex: '1 1 400px' }}>
-          <span className="section-subtitle">OUR STORY</span>
-          <h2 className="section-title">Built on Empathy, Sustained by Trust</h2>
-          <p className="section-desc" style={{ textAlign: 'left', marginBottom: '1.5rem' }}>
-            Founded in 2021, Universal Home was born out of a stark realization: the elderly, often the pillars of our families, can sometimes find themselves vulnerable, lonely, or lacking specialized care in their twilight years.
-          </p>
-          <p className="section-desc" style={{ textAlign: 'left', marginBottom: '1.5rem' }}>
-            Our mission is simple. <strong>No elder should feel abandoned.</strong> Whether they require intense post-surgery rehab, dementia support, or simply a warm, loving community to spend their days, we provide an environment that honors their dignity.
-          </p>
-          <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '2rem' }}>
+          <h2 style={{ fontSize: '2rem', marginBottom: '1rem', color: 'var(--primary)' }}>Who We Are</h2>
+          <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '1rem', marginTop: '1rem' }}>
             <li style={{ display: 'flex', alignItems: 'center', gap: '1rem', color: 'var(--gray-800)', fontWeight: '500' }}>
               <div style={{ background: 'var(--primary-light)', color: 'var(--primary)', padding: '0.5rem', borderRadius: '50%' }}>
                 <i className="fas fa-check"></i>
               </div>
-              Registered NGO ensuring transparency
+              Registered NGO
             </li>
             <li style={{ display: 'flex', alignItems: 'center', gap: '1rem', color: 'var(--gray-800)', fontWeight: '500' }}>
               <div style={{ background: 'var(--primary-light)', color: 'var(--primary)', padding: '0.5rem', borderRadius: '50%' }}>
                 <i className="fas fa-check"></i>
               </div>
-              100% free boarding for destitute seniors
+              Free Boarding & Food
             </li>
             <li style={{ display: 'flex', alignItems: 'center', gap: '1rem', color: 'var(--gray-800)', fontWeight: '500' }}>
               <div style={{ background: 'var(--primary-light)', color: 'var(--primary)', padding: '0.5rem', borderRadius: '50%' }}>
                 <i className="fas fa-check"></i>
               </div>
-              Certified medical & caregiving staff
+              Care Support
             </li>
           </ul>
         </div>

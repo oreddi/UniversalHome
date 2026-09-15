@@ -1,8 +1,11 @@
 'use client';
 
 import Link from 'next/link';
+import { useLanguage } from '@/context/LanguageContext';
 
 export default function Footer({ onOpenDonateModal }) {
+  const { t } = useLanguage();
+
   return (
     <footer className="footer">
       <div className="container">
@@ -13,28 +16,28 @@ export default function Footer({ onOpenDonateModal }) {
               Registered non-profit old age home & orphanage in Kowkur, Hyderabad. Providing 100% free boarding, care, and food for destitute seniors since 2011.
             </p>
             <button className="btn btn-donate" onClick={onOpenDonateModal}>
-              <i className="fas fa-heart"></i> Donate / Sponsor an Elder
+              <i className="fas fa-heart"></i> {t('btnDonate')}
             </button>
           </div>
 
           <div className="footer-links">
-            <h4>Quick Navigation</h4>
+            <h4>{t('footQuick')}</h4>
             <ul>
               <li>
-                <Link href="/">Home</Link>
+                <Link href="/">{t('navHome')}</Link>
               </li>
               <li>
-                <Link href="/services">Care Services</Link>
+                <Link href="#about">{t('navAbout')}</Link>
               </li>
               <li>
-                <Link href="/facilities">Free Boarding & Campus</Link>
+                <Link href="#care-guide">{t('navWhatWeDo')}</Link>
               </li>
               <li>
-                <Link href="/contact">Book a Visit</Link>
+                <Link href="#gallery">{t('navGallery')}</Link>
               </li>
               <li>
                 <button onClick={onOpenDonateModal} style={{ background: 'none', border: 'none', color: 'var(--secondary)', fontWeight: 700, padding: 0, cursor: 'pointer' }}>
-                  Donate via UPI / QR
+                  {t('navDonateQR')}
                 </button>
               </li>
             </ul>

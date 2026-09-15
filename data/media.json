@@ -2,7 +2,7 @@
   "heroSlides": [
     {
       "id": "0",
-      "image": "/images/hero-1.png",
+      "image": "/realUploads/ServingFoodforOldPeople.jpeg",
       "order": 0
     },
     {
@@ -12,126 +12,39 @@
     },
     {
       "id": "2",
-      "image": "/images/nursing-care.png",
+      "image": "/images/prayer-hall.png",
       "order": 2
-    },
-    {
-      "id": "3",
-      "image": "/images/nutritious-meals.png",
-      "order": 3
-    },
-    {
-      "id": "4",
-      "image": "/images/clean-bedroom.png",
-      "order": 4
     }
   ],
   "gallerySlides": [
     {
       "id": "g1",
       "category": "care",
-      "title": "Warm Elderly Care",
-      "image": "/images/hero-1.png",
+      "title": "Serving Food to Children",
+      "image": "/realUploads/ServingFoodforChildren.jpeg",
       "order": 0
     },
     {
       "id": "g2",
-      "category": "routine",
-      "title": "Morning Outdoor Yoga",
-      "image": "/images/hero-2.png",
+      "category": "recreation",
+      "title": "Elderly Group Activities",
+      "image": "/images/recreation.png",
       "order": 1
     },
     {
       "id": "g3",
-      "category": "dining",
-      "title": "Communal Organic Dining",
-      "image": "/images/hero-3.png",
+      "category": "facilities",
+      "title": "Clean Living Space",
+      "image": "/images/clean-bedroom.png",
       "order": 2
     },
     {
       "id": "g4",
-      "category": "care",
-      "title": "24/7 Vitals Monitoring",
-      "image": "/images/nursing-care.png",
-      "order": 3
-    },
-    {
-      "id": "g5",
-      "category": "care",
-      "title": "Doctor Consultation",
-      "image": "/images/doctor-visit.png",
-      "order": 4
-    },
-    {
-      "id": "g6",
       "category": "dining",
-      "title": "Dietitian Prepared Thali",
+      "title": "Nutritious Meals Service",
       "image": "/images/nutritious-meals.png",
-      "order": 5
-    },
-    {
-      "id": "g7",
-      "category": "routine",
-      "title": "Rehab & Physiotherapy",
-      "image": "/images/physiotherapy.png",
-      "order": 6
-    },
-    {
-      "id": "g8",
-      "category": "care",
-      "title": "Dementia Brain Games",
-      "image": "/images/dementia-care.png",
-      "order": 7
-    },
-    {
-      "id": "g9",
-      "category": "routine",
-      "title": "Recreation & Carrom Fun",
-      "image": "/images/recreation.png",
-      "order": 8
-    },
-    {
-      "id": "g10",
-      "category": "living",
-      "title": "Spacious Clean Bedroom",
-      "image": "/images/clean-bedroom.png",
-      "order": 9
-    },
-    {
-      "id": "g11",
-      "category": "routine",
-      "title": "Evening Prayer Hall",
-      "image": "/images/prayer-hall.png",
-      "order": 10
+      "order": 3
     }
   ],
-  "servicesSlides": [
-    {
-      "id": "caregiver",
-      "title": "24/7 Caregiver Support",
-      "image": "/images/nursing-care.png",
-      "icon": "fas fa-user-friends",
-      "desc": "Round-the-clock dedicated caregiver support and personal assistance for all residents in a safe environment.",
-      "order": 0
-    },
-    {
-      "id": "food",
-      "title": "Homely Vegetarian Meals",
-      "image": "/images/nutritious-meals.png",
-      "icon": "fas fa-utensils",
-      "desc": "Hygienic, warm, and freshly cooked vegetarian meals provided four times a day.",
-      "order": 1
-    },
-    {
-      "id": "recreation",
-      "title": "Recreation & Prayers",
-      "image": "/images/recreation.png",
-      "icon": "fas fa-smile",
-      "desc": "Daily prayers, light exercises, festival celebrations, and group activities to keep spirits high.",
-      "order": 2
-    }
-  ],
-  "aboutImage": "/images/hero-1.png",
-  "bedsImage": "/images/clean-bedroom.png",
-  "foodImage": "/images/nutritious-meals.png"
+  "whatWeDoImage": "/realUploads/ChildrensFood.jpeg"
 }

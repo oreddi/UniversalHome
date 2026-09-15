@@ -56,28 +56,17 @@ export default function HeroSlider({ onOpenDonateModal, onOpenVideoModal }) {
 
       <div className="hero-overlay"></div>
 
-      <div className="container hero-content">
-        <div className="badge-pill">
-          <i className="fas fa-shield-alt"></i> {t('badgeHero')}
-        </div>
+      <div className="container hero-content" style={{ textAlign: 'center', maxWidth: '850px', margin: '0 auto', padding: '4rem 1.5rem' }}>
+        <h1 className="hero-title" style={{ fontSize: 'clamp(2.2rem, 5vw, 3.5rem)', fontWeight: 'bold', textShadow: '0 2px 10px rgba(0,0,0,0.7)' }}>{t('heroTitle')}</h1>
+        <p className="hero-subtitle" style={{ fontSize: '1.25rem', marginBottom: '2.5rem', textShadow: '0 2px 8px rgba(0,0,0,0.7)' }}>{t('heroSubtitle')}</p>
 
-        <h1 className="hero-title">{t('heroTitle')}</h1>
-        <p className="hero-subtitle">{t('heroSubtitle')}</p>
-
-        <div className="hero-btns">
-          <a href="/care-guide" className="btn btn-primary">
-            <i className="fas fa-compass"></i> {t('btnExploreGuide')}
-          </a>
-
-          <button className="video-preview-btn" onClick={onOpenVideoModal}>
-            <span className="play-icon-circle">
-              <i className="fas fa-arrow-right"></i>
-            </span>
-            <span>{t('btnVideoTour')}</span>
+        <div className="hero-btns" style={{ display: 'flex', justifyContent: 'center', gap: '1rem' }}>
+          <button className="btn btn-primary" onClick={onOpenDonateModal} style={{ fontSize: '1.2rem', padding: '1rem 2rem' }}>
+            <i className="fas fa-heart"></i> Donate & Support Us
           </button>
-
-          <a href="/contact" className="btn btn-secondary">
-            <i className="fas fa-list-ol"></i> {t('btnNextSteps')}
+          
+          <a href="/contact" className="btn btn-secondary" style={{ fontSize: '1.2rem', padding: '1rem 2rem' }}>
+            <i className="fas fa-phone"></i> Contact Us
           </a>
         </div>
       </div>

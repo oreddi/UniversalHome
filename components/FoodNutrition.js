@@ -32,36 +32,18 @@ export default function FoodNutrition() {
             </div>
           </div>
           <div className="spotlight-text">
-            <span className="section-subtitle">FOOD ITEMS & NUTRITION</span>
-            <h3>Fresh, Healthy & Hygienic Meals</h3>
-            <p>
-              We serve freshly prepared, homely vegetarian meals cooked in a clean and hygienic kitchen every day.
-            </p>
-
             <ul className="feature-list" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               <li>
-                <span className="check">✓</span> 
-                <div>
-                  <strong>4 Meals a Day:</strong> Morning tea & breakfast, nutritious lunch, evening snacks & tea, and a light homely dinner.
-                </div>
+                <span className="check">✓</span> 4 Meals a Day
               </li>
               <li>
-                <span className="check">✓</span> 
-                <div>
-                  <strong>Fresh Ingredients:</strong> Freshly sourced vegetables and wholesome grains used daily for cooking.
-                </div>
+                <span className="check">✓</span> Fresh Ingredients
               </li>
               <li>
-                <span className="check">✓</span> 
-                <div>
-                  <strong>Basic Diet Care:</strong> We accommodate basic health needs like soft-cooked or diabetic-friendly food.
-                </div>
+                <span className="check">✓</span> Basic Diet Care
               </li>
               <li>
-                <span className="check">✓</span> 
-                <div>
-                  <strong>Purified Water:</strong> Clean RO purified drinking water available for all residents 24/7.
-                </div>
+                <span className="check">✓</span> Purified Water
               </li>
             </ul>
 

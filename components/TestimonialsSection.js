@@ -27,9 +27,7 @@ export default function TestimonialsSection() {
     <section id="testimonials" className="section section-bg">
       <div className="container">
         <div className="section-header">
-          <span className="section-subtitle">TESTIMONIALS</span>
           <h2 className="section-title">What Families Say About Us</h2>
-          <p className="section-desc">Heartfelt experiences shared by children and relatives of our residents.</p>
         </div>
 
         <div className="services-grid">

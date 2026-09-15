@@ -46,7 +46,31 @@ export default function DonateModal({ isOpen, onClose }) {
             ))}
           </div>
 
-          <div className="qr-card">
+          {/* Donor Information Form */}
+          <div style={{ marginTop: '1.25rem', textAlign: 'left', background: '#fff', padding: '1rem', borderRadius: '8px', border: '1px solid var(--gray-200)' }}>
+            <h4 style={{ fontSize: '0.95rem', color: 'var(--dark)', marginBottom: '0.75rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <i className="fas fa-user-edit" style={{ color: 'var(--primary)' }}></i> Donor Details (For Tax Receipt & Records)
+            </h4>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.75rem', marginBottom: '0.75rem' }}>
+              <input
+                type="text"
+                placeholder="Your Full Name *"
+                style={{ width: '100%', padding: '0.5rem 0.75rem', borderRadius: '4px', border: '1px solid var(--gray-300)', fontSize: '0.85rem' }}
+              />
+              <input
+                type="tel"
+                placeholder="Phone Number *"
+                style={{ width: '100%', padding: '0.5rem 0.75rem', borderRadius: '4px', border: '1px solid var(--gray-300)', fontSize: '0.85rem' }}
+              />
+            </div>
+            <input
+              type="text"
+              placeholder="Email or PAN Number (for 80G tax receipt)"
+              style={{ width: '100%', padding: '0.5rem 0.75rem', borderRadius: '4px', border: '1px solid var(--gray-300)', fontSize: '0.85rem' }}
+            />
+          </div>
+
+          <div className="qr-card" style={{ marginTop: '1rem' }}>
             <svg className="qr-code-svg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
               <rect width="200" height="200" fill="#ffffff" />
               <rect x="15" y="15" width="50" height="50" fill="#0d6b3d" />
@@ -80,7 +104,7 @@ export default function DonateModal({ isOpen, onClose }) {
             </svg>
 
             <p style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--primary)' }}>
-              Scan using GPay, PhonePe, Paytm or BHIM
+              Scan QR using GPay, PhonePe, Paytm or BHIM
             </p>
           </div>
 
@@ -101,13 +125,14 @@ export default function DonateModal({ isOpen, onClose }) {
               background: 'var(--gray-100)',
               padding: '0.75rem',
               borderRadius: 'var(--radius-sm)',
+              marginTop: '0.75rem'
             }}
           >
-            <p>
-              <i className="fas fa-shield-alt" style={{ color: 'var(--primary)' }}></i> All donations eligible for 80G tax benefit.
+            <p style={{ marginBottom: '0.2rem' }}>
+              <i className="fas fa-shield-alt" style={{ color: 'var(--primary)' }}></i> All donations are eligible for 80G tax benefit receipts.
             </p>
             <p>
-              <i className="fas fa-info-circle" style={{ color: 'var(--primary)' }}></i> Receipts issued immediately via WhatsApp/Email.
+              <i className="fas fa-check-circle" style={{ color: 'var(--primary)' }}></i> Donor details logged for official NGO records.
             </p>
           </div>
         </div>

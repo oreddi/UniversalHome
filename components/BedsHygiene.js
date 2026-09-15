@@ -32,36 +32,18 @@ export default function BedsHygiene() {
             </div>
           </div>
           <div className="spotlight-text">
-            <span className="section-subtitle">BEDS & CLEANLINESS</span>
-            <h3>Clean Living Environments & Comfortable Beds</h3>
-            <p>
-              We believe cleanliness is the bedrock of senior health. Our facility maintains strict cleanliness standards to ensure a comfortable and healthy home.
-            </p>
-
             <ul className="feature-list" style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               <li>
-                <span className="check">✓</span> 
-                <div>
-                  <strong>Comfortable Beds:</strong> Clean, comfortable mattresses ensuring a good night's sleep.
-                </div>
+                <span className="check">✓</span> Comfortable Beds
               </li>
               <li>
-                <span className="check">✓</span> 
-                <div>
-                  <strong>Daily Linen Change:</strong> Bedsheets, pillow covers, and blankets are laundered and changed regularly.
-                </div>
+                <span className="check">✓</span> Daily Linen Change
               </li>
               <li>
-                <span className="check">✓</span> 
-                <div>
-                  <strong>Daily Housekeeping:</strong> Floors and rooms are washed and swept daily to keep the environment fresh.
-                </div>
+                <span className="check">✓</span> Daily Cleaning
               </li>
               <li>
-                <span className="check">✓</span> 
-                <div>
-                  <strong>Safe Washrooms:</strong> Safety handrails, non-slip tiles, and hot water in every washroom to prevent slips.
-                </div>
+                <span className="check">✓</span> Safe Washrooms
               </li>
             </ul>
 

@@ -24,30 +24,47 @@ export default function Header({ onOpenDonateModal }) {
 
         {/* Clean Navigation Links */}
         <ul className={`nav-menu ${isMobileOpen ? 'active' : ''}`} id="navMenu">
+          {/* Mobile Drawer Close Button */}
+          <li className="mobile-drawer-header" style={{ width: '100%', display: 'flex', justifyContent: 'flex-end', marginBottom: '0.25rem' }}>
+            <button 
+              onClick={closeMobileMenu}
+              style={{ background: 'none', color: 'var(--gray-600)', border: 'none', padding: '0.2rem', fontSize: '1.5rem', cursor: 'pointer' }}
+              aria-label="Close Menu"
+            >
+              <i className="fas fa-times"></i>
+            </button>
+          </li>
           <li>
             <Link href="/" className="nav-link" onClick={closeMobileMenu}>
               {t('navHome')}
             </Link>
           </li>
           <li>
-            <Link href="/services" className="nav-link" onClick={closeMobileMenu}>
-              {t('navServices')}
-            </Link>
+            <a href="#about" className="nav-link" onClick={closeMobileMenu}>
+              {t('navAbout')}
+            </a>
           </li>
           <li>
-            <Link href="/facilities" className="nav-link" onClick={closeMobileMenu}>
-              {t('navBoarding')}
-            </Link>
+            <a href="#care-guide" className="nav-link" onClick={closeMobileMenu}>
+              {t('navWhatWeDo')}
+            </a>
           </li>
           <li>
-            <Link href="/care-guide" className="nav-link" onClick={closeMobileMenu}>
-              {t('navGuide')}
-            </Link>
+            <a href="#gallery" className="nav-link" onClick={closeMobileMenu}>
+              {t('navGallery')}
+            </a>
           </li>
           <li>
-            <Link href="/contact" className="nav-link" onClick={closeMobileMenu}>
-              {t('navContact')}
-            </Link>
+            <button
+              className="nav-link"
+              style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', fontWeight: 'bold', color: 'var(--primary)' }}
+              onClick={() => {
+                closeMobileMenu();
+                if (onOpenDonateModal) onOpenDonateModal();
+              }}
+            >
+              {t('navDonateQR')}
+            </button>
           </li>
 
           {/* Mobile Drawer Language Selector */}
@@ -84,7 +101,7 @@ export default function Header({ onOpenDonateModal }) {
                 </button>
               </div>
             </div>
-            
+
             <a href="tel:+919398861612" className="mobile-drawer-call-btn">
               <i className="fas fa-phone-alt"></i> Call Helpline (+91 9398861612)
             </a>
@@ -96,7 +113,7 @@ export default function Header({ onOpenDonateModal }) {
           <Link href="/contact" className="btn btn-secondary nav-visit-btn">
             <i className="fas fa-calendar-check"></i> {t('btnVisit')}
           </Link>
-          
+
           <button className="btn btn-donate nav-donate-btn" onClick={onOpenDonateModal}>
             <i className="fas fa-heart"></i> {t('btnDonate')}
           </button>

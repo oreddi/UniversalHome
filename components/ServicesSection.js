@@ -26,11 +26,7 @@ export default function ServicesSection({ onOpenServiceModal }) {
     <section id="services" className="section">
       <div className="container">
         <div className="section-header">
-          <span className="section-subtitle">OUR CARE PILLARS</span>
-          <h2 className="section-title">Comprehensive Geriatric Services</h2>
-          <p className="section-desc">
-            We don't just provide a bed; we provide a holistic elder care ecosystem tailored for aging grace.
-          </p>
+          <h2 className="section-title">Our Services</h2>
         </div>
 
         <div className="services-grid">
@@ -40,17 +36,7 @@ export default function ServicesSection({ onOpenServiceModal }) {
                 <img src={service.image} alt={service.title} />
               </div>
               <div className="service-content">
-                <h3 style={{ margin: 0, marginBottom: '0.75rem' }}>{service.title}</h3>
-                <p style={{ marginTop: 0 }}>{service.desc}</p>
-                <button
-                  className="btn-link"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    if (onOpenServiceModal) onOpenServiceModal(service.id);
-                  }}
-                >
-                  Learn More <i className="fas fa-arrow-right"></i>
-                </button>
+                <h3 style={{ margin: 0, marginBottom: '0.75rem', textAlign: 'center' }}>{service.title}</h3>
               </div>
             </div>
           ))}
