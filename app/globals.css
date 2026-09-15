@@ -245,6 +245,11 @@ img {
   padding: 0;
 }
 
+.mobile-drawer-header,
+.mobile-drawer-footer {
+  display: none;
+}
+
 .nav-link {
   font-size: 1.05rem;
   font-weight: 700;
@@ -1591,6 +1596,32 @@ img {
 
   .nav-menu.active {
     left: 0;
+  }
+
+  .mobile-drawer-header {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-bottom: 0.25rem;
+  }
+
+  .mobile-close-btn {
+    background: none;
+    color: var(--gray-600);
+    border: none;
+    padding: 0.2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .mobile-drawer-footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: auto;
+    padding-top: 2rem;
+    border-top: 1px solid var(--gray-200);
+    gap: 1.5rem;
   }
 
   .mobile-toggle {

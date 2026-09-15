@@ -25,10 +25,10 @@ export default function Header({ onOpenDonateModal }) {
         {/* Clean Navigation Links */}
         <ul className={`nav-menu ${isMobileOpen ? 'active' : ''}`} id="navMenu">
           {/* Mobile Drawer Close Button */}
-          <li className="mobile-drawer-header" style={{ width: '100%', display: 'flex', justifyContent: 'flex-end', marginBottom: '0.25rem' }}>
+          <li className="mobile-drawer-header">
             <button 
               onClick={closeMobileMenu}
-              style={{ background: 'none', color: 'var(--gray-600)', border: 'none', padding: '0.2rem', fontSize: '1.5rem', cursor: 'pointer' }}
+              className="mobile-close-btn"
               aria-label="Close Menu"
             >
               <i className="fas fa-times"></i>
