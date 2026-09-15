@@ -90,40 +90,13 @@ export default function HowWeHelpSection() {
         </div>
 
         {/* Bottom Callout Banner */}
-        <div 
-          style={{ 
-            marginTop: '2.5rem', 
-            background: 'linear-gradient(135deg, #0284c7, #0369a1)', 
-            color: '#fff', 
-            padding: '1.5rem 2rem', 
-            borderRadius: '10px', 
-            display: 'flex', 
-            justifyContent: 'space-between', 
-            alignItems: 'center',
-            flexWrap: 'wrap',
-            gap: '1rem',
-            boxShadow: 'var(--shadow-md)'
-          }}
-        >
+        <div className="sponsor-banner">
           <div>
-            <h4 style={{ fontSize: '1.3rem', margin: 0, color: '#fff' }}>{t('sponsorTag')}</h4>
-            <p style={{ margin: '0.25rem 0 0', opacity: 0.9, fontSize: '0.95rem' }}>{t('sponsorSub')}</p>
+            <h4 className="sponsor-title">{t('sponsorTag')}</h4>
+            <p className="sponsor-desc">{t('sponsorSub')}</p>
           </div>
-          <a 
-            href="tel:+919398861612" 
-            style={{ 
-              background: 'var(--secondary)', 
-              color: '#fff', 
-              padding: '0.75rem 1.5rem', 
-              borderRadius: '6px', 
-              fontWeight: 'bold', 
-              fontSize: '1rem',
-              textDecoration: 'none',
-              whiteSpace: 'nowrap',
-              boxShadow: '0 4px 10px rgba(234, 88, 12, 0.4)'
-            }}
-          >
-            <i className="fas fa-phone-alt" style={{ marginRight: '0.5rem' }}></i> {t('btnSponsorCall')}
+          <a href="tel:+919398861612" className="sponsor-btn">
+            <i className="fas fa-phone-alt"></i> {t('btnSponsorCall')}
           </a>
         </div>
 
