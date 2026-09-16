@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 
 export default function HeroSlider({ onOpenDonateModal, onOpenVideoModal }) {
@@ -61,9 +62,9 @@ export default function HeroSlider({ onOpenDonateModal, onOpenVideoModal }) {
         <p className="hero-subtitle" style={{ fontSize: '1.25rem', marginBottom: '2.5rem', textShadow: '0 2px 8px rgba(0,0,0,0.7)' }}>{t('heroSubtitle')}</p>
 
         <div className="hero-btns" style={{ display: 'flex', justifyContent: 'center', gap: '1rem' }}>
-          <button className="btn btn-primary" onClick={onOpenDonateModal} style={{ fontSize: '1.2rem', padding: '1rem 2rem' }}>
+          <Link href="/donate" className="btn btn-primary" style={{ fontSize: '1.2rem', padding: '1rem 2rem' }}>
             <i className="fas fa-heart"></i> Donate & Support Us
-          </button>
+          </Link>
           
           <a href="/contact" className="btn btn-secondary" style={{ fontSize: '1.2rem', padding: '1rem 2rem' }}>
             <i className="fas fa-phone"></i> Contact Us

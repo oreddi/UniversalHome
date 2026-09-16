@@ -1,5 +1,5 @@
 'use client';
-
+import Link from 'next/link';
 export default function FreeServiceSection({ onOpenDonateModal }) {
   const sponsorshipOptions = [
     {
@@ -55,9 +55,9 @@ export default function FreeServiceSection({ onOpenDonateModal }) {
               </p>
             </div>
             <div className="promise-action-block">
-              <button className="btn btn-donate promise-donate-btn" onClick={onOpenDonateModal}>
+              <Link href="/donate" className="btn btn-donate promise-donate-btn">
                 <i className="fas fa-qrcode"></i> Donate via UPI / QR
-              </button>
+              </Link>
             </div>
           </div>
         </div>

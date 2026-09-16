@@ -6,16 +6,15 @@ import Header from '@/components/Header';
 import ContactSection from '@/components/ContactSection';
 import FaqSection from '@/components/FaqSection';
 import Footer from '@/components/Footer';
-import DonateModal from '@/components/DonateModal';
+
 import FloatingActions from '@/components/FloatingActions';
 
 export default function ContactPage() {
-  const [isDonateOpen, setIsDonateOpen] = useState(false);
 
   return (
     <main>
       <TopBar />
-      <Header onOpenDonateModal={() => setIsDonateOpen(true)} />
+      <Header />
 
       {/* Page Header Banner */}
       <div className="page-banner">
@@ -33,8 +32,7 @@ export default function ContactPage() {
       <ContactSection />
       <FaqSection />
 
-      <Footer onOpenDonateModal={() => setIsDonateOpen(true)} />
-      <DonateModal isOpen={isDonateOpen} onClose={() => setIsDonateOpen(false)} />
+      <Footer />
       <FloatingActions />
     </main>
   );

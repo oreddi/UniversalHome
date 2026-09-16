@@ -200,7 +200,7 @@ export default function AdminPage() {
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: '2rem', alignItems: 'flex-start' }}>
           <img src={currentImage} alt="Current" style={{ width: '200px', height: '140px', objectFit: 'cover', borderRadius: '8px', border: '2px dashed var(--gray-300)' }} />
           <div>
-            <p style={{ color: 'var(--gray-600)', marginBottom: '1rem' }}>Upload a new image to replace the current one.</p>
+            <p style={{ color: 'var(--gray-600)', marginBottom: '1rem' }}>Upload a new image to replace the current photo in this section.</p>
             <input 
               type="file" 
               accept="image/*" 
@@ -208,8 +208,8 @@ export default function AdminPage() {
               style={{ display: 'none' }} 
               id={`upload-${sectionKey}`}
             />
-            <label htmlFor={`upload-${sectionKey}`} className="btn btn-primary" style={{ cursor: 'pointer' }}>
-              <i className="fas fa-upload"></i> Replace Image
+            <label htmlFor={`upload-${sectionKey}`} className="btn btn-primary" style={{ cursor: 'pointer', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+              {uploading ? <><i className="fas fa-spinner fa-spin"></i> Uploading...</> : <><i className="fas fa-upload"></i> Replace Image</>}
             </label>
           </div>
         </div>

@@ -9,18 +9,18 @@ import BedsHygiene from '@/components/BedsHygiene';
 import FoodNutrition from '@/components/FoodNutrition';
 import GallerySection from '@/components/GallerySection';
 import Footer from '@/components/Footer';
-import DonateModal from '@/components/DonateModal';
+
 import VideoTourModal from '@/components/VideoTourModal';
 import FloatingActions from '@/components/FloatingActions';
 
 export default function FacilitiesPage() {
-  const [isDonateOpen, setIsDonateOpen] = useState(false);
+  
   const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   return (
     <main>
       <TopBar />
-      <Header onOpenDonateModal={() => setIsDonateOpen(true)} />
+      <Header />
 
       {/* Page Header Banner */}
       <div className="page-banner">
@@ -35,14 +35,14 @@ export default function FacilitiesPage() {
         </div>
       </div>
 
-      <FreeServiceSection onOpenDonateModal={() => setIsDonateOpen(true)} />
+      <FreeServiceSection />
       <FacilitiesSection />
       <BedsHygiene />
       <FoodNutrition />
       <GallerySection />
 
-      <Footer onOpenDonateModal={() => setIsDonateOpen(true)} />
-      <DonateModal isOpen={isDonateOpen} onClose={() => setIsDonateOpen(false)} />
+      <Footer />
+      
       <VideoTourModal isOpen={isVideoOpen} onClose={() => setIsVideoOpen(false)} />
       <FloatingActions />
     </main>

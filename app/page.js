@@ -13,32 +13,29 @@ import TestimonialsSection from '@/components/TestimonialsSection';
 import FaqSection from '@/components/FaqSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
-import DonateModal from '@/components/DonateModal';
+
 import ServiceDetailModal from '@/components/ServiceDetailModal';
 import VideoTourModal from '@/components/VideoTourModal';
 
 export default function Home() {
-  const [isDonateOpen, setIsDonateOpen] = useState(false);
+
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   const [activeServiceModal, setActiveServiceModal] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    import('react').then(() => {
-      fetch('/api/media')
-        .then(() => {
-          setTimeout(() => setIsLoading(false), 800);
-        })
-        .catch(() => setIsLoading(false));
-    });
+    // Only show spinner for 1 second if needed, otherwise it loads fast
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+    return () => clearTimeout(timer);
   }, []);
 
   if (isLoading) {
     return (
       <div style={{ height: '100vh', display: 'flex', justifyContent: 'center', alignItems: 'center', background: 'var(--light-bg)', flexDirection: 'column' }}>
         <div style={{ width: '60px', height: '60px', border: '6px solid rgba(180, 83, 9, 0.2)', borderTop: '6px solid #b45309', borderRadius: '50%', animation: 'spin 1s linear infinite' }}></div>
-        <h2 style={{ color: '#b45309', marginTop: '1.5rem', fontFamily: 'var(--font-heading)' }}>Universal Home</h2>
-        <p style={{ color: 'var(--gray-600)', marginTop: '0.5rem' }}>Loading experience...</p>
+        <h2 style={{ color: '#b45309', marginTop: '1.5rem', fontFamily: 'var(--font-heading)', fontSize: '2rem' }}>Universal Home</h2>
         <style>{`
           @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
         `}</style>
@@ -49,11 +46,10 @@ export default function Home() {
   return (
     <main>
       <TopBar />
-      <Header onOpenDonateModal={() => setIsDonateOpen(true)} />
+      <Header />
       
       {/* Hero Section */}
       <HeroSlider
-        onOpenDonateModal={() => setIsDonateOpen(true)}
         onOpenVideoModal={() => setIsVideoOpen(true)}
       />
       <HighlightsBar />
@@ -73,12 +69,12 @@ export default function Home() {
       <ContactSection />
 
       {/* 4. Donation Section at the very end */}
-      <DonationSection onOpenDonateModal={() => setIsDonateOpen(true)} />
+      <DonationSection />
 
-      <Footer onOpenDonateModal={() => setIsDonateOpen(true)} />
+      <Footer />
 
       {/* Modals & Overlays */}
-      <DonateModal isOpen={isDonateOpen} onClose={() => setIsDonateOpen(false)} />
+
       <VideoTourModal isOpen={isVideoOpen} onClose={() => setIsVideoOpen(false)} />
       <ServiceDetailModal
         serviceKey={activeServiceModal}

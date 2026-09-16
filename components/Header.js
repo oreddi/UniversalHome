@@ -50,21 +50,19 @@ export default function Header({ onOpenDonateModal }) {
             </a>
           </li>
           <li>
-            <a href="#gallery" className="nav-link" onClick={closeMobileMenu}>
+            <Link href="/gallery" className="nav-link" onClick={closeMobileMenu}>
               {t('navGallery')}
-            </a>
+            </Link>
           </li>
           <li>
-            <button
+            <Link
+              href="/donate"
               className="nav-link"
               style={{ background: 'none', border: 'none', padding: 0, cursor: 'pointer', fontFamily: 'inherit', fontSize: 'inherit', fontWeight: 'bold', color: 'var(--primary)' }}
-              onClick={() => {
-                closeMobileMenu();
-                if (onOpenDonateModal) onOpenDonateModal();
-              }}
+              onClick={closeMobileMenu}
             >
               {t('navDonateQR')}
-            </button>
+            </Link>
           </li>
 
           {/* Mobile Drawer Language Selector */}
@@ -114,9 +112,9 @@ export default function Header({ onOpenDonateModal }) {
             <i className="fas fa-calendar-check"></i> {t('btnVisit')}
           </Link>
 
-          <button className="btn btn-donate nav-donate-btn" onClick={onOpenDonateModal}>
+          <Link href="/donate" className="btn btn-donate nav-donate-btn">
             <i className="fas fa-heart"></i> {t('btnDonate')}
-          </button>
+          </Link>
 
           {/* Mobile Menu Hamburger */}
           <button

@@ -5,18 +5,18 @@ import TopBar from '@/components/TopBar';
 import Header from '@/components/Header';
 import CareGuideSection from '@/components/CareGuideSection';
 import Footer from '@/components/Footer';
-import DonateModal from '@/components/DonateModal';
+
 import VideoTourModal from '@/components/VideoTourModal';
 import FloatingActions from '@/components/FloatingActions';
 
 export default function CareGuidePage() {
-  const [isDonateOpen, setIsDonateOpen] = useState(false);
+  
   const [isVideoOpen, setIsVideoOpen] = useState(false);
 
   return (
     <main>
       <TopBar />
-      <Header onOpenDonateModal={() => setIsDonateOpen(true)} />
+      <Header />
 
       {/* Page Header Banner */}
       <div className="page-banner">
@@ -33,8 +33,8 @@ export default function CareGuidePage() {
 
       <CareGuideSection onOpenVideoModal={() => setIsVideoOpen(true)} />
 
-      <Footer onOpenDonateModal={() => setIsDonateOpen(true)} />
-      <DonateModal isOpen={isDonateOpen} onClose={() => setIsDonateOpen(false)} />
+      <Footer />
+      
       <VideoTourModal isOpen={isVideoOpen} onClose={() => setIsVideoOpen(false)} />
       <FloatingActions />
     </main>

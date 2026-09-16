@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 
 export default function GallerySection() {
@@ -75,6 +76,12 @@ export default function GallerySection() {
                   </p>
                 </div>
               ))}
+            </div>
+
+            <div style={{ marginTop: '1.5rem', textAlign: 'center' }}>
+              <Link href="/gallery" className="btn btn-outline" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem', padding: '0.75rem 1.8rem', fontWeight: 'bold' }}>
+                <i className="fas fa-images"></i> View Full Photo Gallery
+              </Link>
             </div>
 
           </div>

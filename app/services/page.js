@@ -5,18 +5,18 @@ import TopBar from '@/components/TopBar';
 import Header from '@/components/Header';
 import ServicesSection from '@/components/ServicesSection';
 import Footer from '@/components/Footer';
-import DonateModal from '@/components/DonateModal';
+
 import ServiceDetailModal from '@/components/ServiceDetailModal';
 import FloatingActions from '@/components/FloatingActions';
 
 export default function ServicesPage() {
-  const [isDonateOpen, setIsDonateOpen] = useState(false);
+  
   const [activeServiceModal, setActiveServiceModal] = useState(null);
 
   return (
     <main>
       <TopBar />
-      <Header onOpenDonateModal={() => setIsDonateOpen(true)} />
+      <Header />
 
       {/* Page Header Banner */}
       <div className="page-banner">
@@ -33,8 +33,8 @@ export default function ServicesPage() {
 
       <ServicesSection onOpenServiceModal={(key) => setActiveServiceModal(key)} />
 
-      <Footer onOpenDonateModal={() => setIsDonateOpen(true)} />
-      <DonateModal isOpen={isDonateOpen} onClose={() => setIsDonateOpen(false)} />
+      <Footer />
+      
       <ServiceDetailModal
         serviceKey={activeServiceModal}
         onClose={() => setActiveServiceModal(null)}

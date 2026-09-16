@@ -1999,3 +1999,90 @@ img {
     height: 140px;
   }
 }
+
+/* DONATE MODAL AMOUNTS */
+.preset-amounts {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.amount-chip {
+  background: var(--gray-100);
+  border: 1px solid var(--gray-300);
+  padding: 0.6rem 1.25rem;
+  border-radius: 50px;
+  font-weight: 700;
+  color: var(--gray-700);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.amount-chip:hover {
+  background: var(--gray-200);
+}
+
+.amount-chip.active {
+  background: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(234, 88, 12, 0.3);
+}
+
+/* BANK TRANSFER DETAILS MOBILE STYLES */
+.bank-details-container {
+  font-size: 1.1rem;
+  color: var(--dark);
+  line-height: 1.8;
+}
+
+.bank-detail-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 0.75rem 0;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px dashed var(--gray-300);
+  gap: 0.5rem;
+}
+
+.bank-detail-row:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.bank-detail-val {
+  text-align: right;
+  font-weight: 600;
+  color: #222;
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+}
+
+.bank-detail-row span {
+  font-weight: 600;
+  color: #222;
+  font-size: 1.05rem;
+  font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+}
+
+@media (max-width: 500px) {
+  .bank-detail-row {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.2rem;
+  }
+  .bank-detail-row strong {
+    color: var(--gray-600);
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .bank-detail-val, .bank-detail-row span {
+    text-align: left !important;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #222;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+  }
+}

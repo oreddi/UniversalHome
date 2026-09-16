@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 
 export default function DonationSection({ onOpenDonateModal }) {
@@ -22,13 +23,13 @@ export default function DonationSection({ onOpenDonateModal }) {
           </div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem', flexWrap: 'wrap' }}>
-            <button 
+            <Link 
+              href="/donate" 
               className="btn" 
-              onClick={onOpenDonateModal} 
               style={{ background: 'var(--secondary)', color: '#fff', fontSize: '1.2rem', padding: '1rem 2.5rem', fontWeight: 'bold', boxShadow: '0 6px 20px rgba(234, 88, 12, 0.4)', borderRadius: '30px' }}
             >
               <i className="fas fa-heart" style={{ marginRight: '0.5rem' }}></i> {t('btnDonateQR')}
-            </button>
+            </Link>
             <a 
               href="tel:+919398861612" 
               style={{ background: 'rgba(255,255,255,0.15)', color: '#fff', border: '2px solid rgba(255,255,255,0.4)', fontSize: '1.1rem', padding: '0.9rem 2rem', fontWeight: 'bold', borderRadius: '30px', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
