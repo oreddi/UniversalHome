@@ -34,7 +34,7 @@ export default function DonationSection({ onOpenDonateModal }) {
               href="tel:+919398861612" 
               style={{ background: 'rgba(255,255,255,0.15)', color: '#fff', border: '2px solid rgba(255,255,255,0.4)', fontSize: '1.1rem', padding: '0.9rem 2rem', fontWeight: 'bold', borderRadius: '30px', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}
             >
-              <i className="fas fa-phone-alt"></i> {t('btnCallUs')}
+              <i className="fas fa-phone-alt fa-flip-horizontal"></i> {t('btnCallUs')}
             </a>
           </div>
         </div>

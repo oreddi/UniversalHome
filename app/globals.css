@@ -2073,10 +2073,15 @@ img {
   font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
 }
 
+/* Force all phone icons to point RIGHT (by resetting them to default) */
+.fa-phone, .fa-phone-alt, .fa-phone-volume {
+  transform: none !important;
+  display: inline-block;
+}
+
 @media (max-width: 500px) {
   .bank-detail-row {
     flex-direction: column;
-    justify-content: flex-start;
     gap: 0.2rem;
   }
   .bank-detail-row strong {

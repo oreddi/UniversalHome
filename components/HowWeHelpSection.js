@@ -96,7 +96,7 @@ export default function HowWeHelpSection() {
             <p className="sponsor-desc">{t('sponsorSub')}</p>
           </div>
           <a href="tel:+919398861612" className="sponsor-btn">
-            <i className="fas fa-phone-alt"></i> {t('btnSponsorCall')}
+            <i className="fas fa-phone-alt fa-flip-horizontal"></i> {t('btnSponsorCall')}
           </a>
         </div>
 

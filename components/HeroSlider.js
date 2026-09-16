@@ -67,7 +67,7 @@ export default function HeroSlider({ onOpenDonateModal, onOpenVideoModal }) {
           </Link>
           
           <a href="/contact" className="btn btn-secondary" style={{ fontSize: '1.2rem', padding: '1rem 2rem' }}>
-            <i className="fas fa-phone"></i> Contact Us
+            <i className="fas fa-phone fa-flip-horizontal"></i> Contact Us
           </a>
         </div>
       </div>
