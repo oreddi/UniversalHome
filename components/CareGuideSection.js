@@ -85,7 +85,7 @@ export default function CareGuideSection() {
 
             {/* Bottom Callout Bar */}
             <div style={{ background: 'var(--primary-light)', borderLeft: '4px solid var(--primary)', padding: '0.85rem 1.25rem', borderRadius: '4px', fontSize: '0.92rem', color: 'var(--dark)', marginTop: '1.25rem' }}>
-              <strong>Zero Cost to Residents:</strong> Every single meal, bed, medical care, and clothing item is provided completely free of cost.
+              <strong>Community Supported:</strong> Every single meal, bed, medical care, and clothing item is provided through the generous support of our community.
             </div>
 
           </div>

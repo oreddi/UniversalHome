@@ -36,7 +36,7 @@ export default function FreeServiceSection({ onOpenDonateModal }) {
           <span className="section-subtitle">100% NON-PROFIT COMMITMENT</span>
           <h2 className="section-title">Free Boarding & Dignified Senior Care</h2>
           <p className="section-desc">
-            Universal Home is a non-profit old age home. We provide 100% free boarding, medical supervision, and nutritious meals to destitute and needy elders supported by public donations.
+            Universal Home is a non-profit old age home. We provide dedicated boarding, medical supervision, and nutritious meals to destitute and needy elders supported by public donations.
           </p>
         </div>
 

@@ -17,7 +17,7 @@ export default function DonationSection({ onOpenDonateModal }) {
               {t('supTitle')}
             </h2>
             <p style={{ color: 'rgba(255,255,255,0.92)', fontSize: '1.1rem', margin: 0, lineHeight: '1.6' }}>
-              Your generous contribution helps provide 100% free food, shelter, clothing, and dignified care to abandoned seniors and children.
+              Your generous contribution helps provide nutritious food, secure shelter, clothing, and dignified care to abandoned seniors and children.
             </p>
           </div>
 

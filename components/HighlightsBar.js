@@ -24,8 +24,8 @@ export default function HighlightsBar() {
               <i className="fas fa-shield-alt"></i>
             </div>
             <div className="highlight-text">
-              <h4 style={{ fontSize: '1.05rem', margin: 0, color: 'var(--dark)' }}>100% Free Service</h4>
-              <span style={{ fontSize: '0.82rem', color: 'var(--gray-600)' }}>Zero charges for destitute</span>
+              <h4 style={{ fontSize: '1.05rem', margin: 0, color: 'var(--dark)' }}>Unconditional Care</h4>
+              <span style={{ fontSize: '0.82rem', color: 'var(--gray-600)' }}>Devoted care for destitute</span>
             </div>
           </div>
 

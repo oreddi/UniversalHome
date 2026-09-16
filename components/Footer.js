@@ -13,7 +13,7 @@ export default function Footer({ onOpenDonateModal }) {
           <div className="footer-brand">
             <h3>Universal Home</h3>
             <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.9rem', marginBottom: '1rem', lineHeight: '1.6' }}>
-              Registered non-profit old age home & orphanage in Kowkur, Hyderabad. Providing 100% free boarding, care, and food for destitute seniors since 2011.
+              Registered non-profit old age home & orphanage in Kowkur, Hyderabad. Providing dedicated boarding, compassionate care, and nutritious food for destitute seniors since 2011.
             </p>
             <button className="btn btn-donate" onClick={onOpenDonateModal}>
               <i className="fas fa-heart"></i> {t('btnDonate')}
